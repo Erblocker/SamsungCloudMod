@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#ff2c7cff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="143.0dip"
+        android:layout_height="143.0dip"
+        android:layout_marginTop="93.0dip"
+        android:layout_marginBottom="48.0dip"
+        android:src="@drawable/kb_welcome_logo"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:textSize="18.0sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tv_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:onClick="browse"
+        android:text="@string/kb_samsung_login_text_tips"
+        android:layout_below="@id/login_logo"
+        android:lineSpacingExtra="6.0dip" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300.0dip"
+        android:layout_height="41.0dip"
+        android:layout_below="@id/tv_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginTop="58.0dip"
+        android:layout_marginRight="28.0dip"
+        android:layout_marginBottom="9.0dip"
+        android:background="@drawable/kb_bg_login_btn"
+        android:gravity="center"
+        android:onClick="exploit"
+        android:text="@string/kb_samsung_signin_button"
+        android:textColor="#ff3180ff"
+        android:textSize="20.0sp"
+        android:textStyle="bold" />
+    <TextView
+        android:textSize="13.0sp"
+        android:textColor="#ff1a438c"
+        android:id="@+id/tv_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:layout_marginBottom="20.0dip"
+        android:onClick="enable"
+        android:text="@string/kb_samsung_login_protocol"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
